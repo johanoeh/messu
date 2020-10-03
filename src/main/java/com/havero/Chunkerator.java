@@ -27,11 +27,11 @@ public class Chunkerator<T> implements Iterable<List<T>> {
 
             @Override
             public List<T> next() {
-                final ArrayList<T> ts = new ArrayList<>();
+                final List<T> list = new ArrayList<>();
                 for (int i = 0; iterator.hasNext() && i < chunkSize; i++) {
-                    ts.add(iterator.next());
+                    list.add(iterator.next());
                 }
-                return ts;
+                return list;
             }
         };
     }

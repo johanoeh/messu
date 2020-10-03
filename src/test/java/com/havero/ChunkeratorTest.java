@@ -34,7 +34,7 @@ class ChunkeratorTest {
     @Test
     public void testNext_exception() {
         try {
-            final Chunkerator<Integer> ch = new Chunkerator<Integer>(0, Collections.emptyList());
+            final Chunkerator<Integer> chunkerator = new Chunkerator<Integer>(0, Collections.emptyList());
             Assert.fail("Expected exception");
         } catch (IllegalArgumentException e) {
 
